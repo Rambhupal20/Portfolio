@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body-bg-container {
+  background-color: black;
+  height: 100vh;
+  padding: 20px;
+}
+
+.greating {
+  color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  font-size: 35px;
+}
+
+.name {
+  color: white;
+  display: flex;
+  justify-content: start;
+  padding-left: 80px;
+  align-items: end;
+  font-size: 80px;
+  padding-top: 100px;
+  text-shadow: 0 0 10px blue;
+}
+
+.job-name {
+  color: white;
+  display: flex;
+  justify-content: start;
+  padding-left: 460px;
+  align-items: end;
+  font-size: 60px;
+  text-shadow: 0 0 5px white;
+}
+
+/* ✅ Responsive behavior for tablets and mobile screens */
+@media screen and (max-width: 768px) {
+  .body-bg-container{
+    height: 100%;
+  }
+  .greating {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 57px;
+    padding-left: 20px;
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .job-name {
+    font-size: 35px;
+    padding-left: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+

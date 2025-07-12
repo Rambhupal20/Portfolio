@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.project {
+  background-color: #000000;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.project-title {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; /* ✅ allows wrapping on smaller screens */
+  gap: 30px;
+}
+
+.project-card {
+  border-style: solid;
+  border-color: yellow;
+  height: 90vh;
+  width: 40vw;
+  margin: 20px;
+  box-shadow: 0 0 20px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.project-image {
+  border-style: solid;
+  border-color: aliceblue;
+  height: 400px;
+  width: 100%;
+  max-width: 600px;
+  object-fit: cover;
+}
+
+.project-name {
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.about-project {
+  color: white;
+  padding: 10px;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ Wraps tools on small screens */
+  margin-top: 10px;
+}
+
+.project-tools {
+  color: aliceblue;
+  border-style: solid;
+  border-color: aliceblue;
+  max-height: 40px;
+  max-width: 150px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ✅ Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 90vw;
+    height: auto;
+  }
+
+  .project-image {
+    height: 250px;
+    width: 100%;
+  }
+
+  .project-name {
+    font-size: 1.2rem;
+  }
+
+  .about-project {
+    font-size: 1rem;
+  }
+
+  .project-tools {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+}
+
